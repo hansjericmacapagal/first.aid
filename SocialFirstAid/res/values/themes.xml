@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  Custom themes, add to Manifest to use -->
+<resources>
+<style name="custom1" parent="android:Theme.Holo.Light"> 
+  <item name="android:textColor">@color/Black</item>
+  </style>
+</resources>

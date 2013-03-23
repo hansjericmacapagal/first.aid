@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+ 
+    <TextView
+        android:id="@+id/Question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/publictox2"/>
+    
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+ 
+        <RadioButton
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="True" />        
+        <RadioButton
+            android:id="@+id/Correct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="False" /> 
+    </RadioGroup>
+
+ <LinearLayout
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    
+    
+    <Button
+        android:id="@+id/Submit"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:background="@drawable/button_custom1"
+        android:textSize="12.0sp"/>
+    
+    <Space 
+      android:layout_width="50dp"
+      android:layout_height="0dp"/>
+    
+    <Button
+      android:id="@+id/next"
+      android:layout_width="125dp"
+      android:layout_height="50dp"
+      android:background="@drawable/button_right_arrow"
+      android:onClick="selectQuestionTox"
+      android:gravity="center_horizontal|center_vertical"/>
+    </LinearLayout>
+           
+    <TextView
+        android:id="@+id/Review"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18.0sp"
+        android:gravity="center"
+        android:background="#58FAF4"/>
+
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+    <Button
+      android:id="@+id/listing"
+      android:layout_width="200dp"
+      android:layout_height="50dp"
+      android:text="Return to Listing" 
+      android:textSize="15.0sp"
+      android:onClick="listing"
+      android:background="@drawable/button_custom1"
+      android:layout_alignParentBottom="true"
+      android:layout_alignParentLeft="true"/>
+    </RelativeLayout> 
+</LinearLayout>
